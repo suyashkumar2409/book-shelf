@@ -5,6 +5,27 @@
     <title>Go Web Development</title>
 </head>
 <body>
-    Whats up my niggas! This is {{ .Name }}
+    <form id ="search-input" onsubmit="return false;">
+        <input name="search" />
+        <input type="submit" value="Search" onclick="submitSearch()"/>
+    </form>
+
+    <table width = 100%>
+        <thead style="text-align: left">
+            <tr>
+                <th width="40%">Title</th>
+                <th width="30%">Author</th>
+                <th width="10%">Year</th>
+                <th width="20%">ID</th>
+            </tr>
+        </thead>
+        <tbody id="search-results">
+        </tbody>
+    </table>
+
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="static/js/index.js"></script>
 </body>
 </html>
