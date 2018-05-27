@@ -12,7 +12,9 @@ type Config struct{
 	DBName string `json:DBName`
 }
 
-func
+func parseConfigFile(){
+
+}
 
 func GetDBName() string{
 	configLock.RLock()
